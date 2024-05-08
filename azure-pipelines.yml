@@ -24,10 +24,10 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: '**/.war'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    TargetFolder: '($(Build.ArtifactStagingDirectory)/SIR)'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '($(Build.ArtifactStagingDirectory)/SIR)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warFile'
     publishLocation: 'Container'
     MaxArtifactSize: 10
