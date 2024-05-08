@@ -27,7 +27,7 @@ steps:
     TargetFolder: '($(Build.ArtifactStagingDirectory)/SIR)'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '($(Build.ArtifactStagingDirectory)/SIR)'
     ArtifactName: 'warFile'
     publishLocation: 'Container'
     MaxArtifactSize: 10
