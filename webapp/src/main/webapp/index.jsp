@@ -6,4 +6,3 @@
 <h3>Karthik</h3>
 <h3>Aspire</h3>
 <h3>Aspire News</h3>
-<h3>Hema is my dream girl</h3>
